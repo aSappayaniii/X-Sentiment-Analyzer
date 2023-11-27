@@ -15,7 +15,7 @@ authHandler.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 API = tweepy.API(authHandler)
 
-searchTerm = 'stocks' # Place the topic here.
+searchTerm = '!YOUR TOPIC OF CHOICE!' # Place the topic here.
 tweetAmount = 100 # Amount of tweets that will be analyzed
 
 tweets = tweepy.Cursor(API.search_tweets, q=searchTerm, lang='en').items(tweetAmount)
